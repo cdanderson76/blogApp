@@ -1,0 +1,30 @@
+1.  CREATE EXPRESS SERVER
+
+
+A. Create a folder on the desktop and name it whatever you want.  Open this folder in
+   VSCode and create your 'backend' folder.  Change directory into the 'backend' folder
+   and create your 'package.json' file.
+
+
+B. Create '/backend/index.js', and just add a simple console log to test it out.  In the
+   'package.json' file, set it up to where it up to where you can import modules the 
+   modern way.
+
+   Create a 'start' script and a 'dev' script using nodemon.
+
+
+C. Install the following packages:
+
+   nodemon (as a dev dependency)
+   express
+
+
+D. Create your express server, and have it render 'Server is running!' to the browser.
+   Also, use a varaible for the PORT number that you use, and log the localhost to the
+   console.  
+
+   When you click this localhost link, it should render the browser and its contents.
+   When this is successful, you've completed the challenge.
+
+
+Solution: https://www.youtube.com/watch?v=TFGEq5OZgaA (4:00)
