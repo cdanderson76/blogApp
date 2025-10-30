@@ -1,0 +1,34 @@
+2.  CONNECT TO MONGODB
+
+
+A. Create a new MongoDB database within MongoDB Atlas (notes in your thumb drive).
+   Install the following packages:
+
+   mongoose
+   dotenv
+
+
+B. Create '/backend/.env' and '/backend/.gitignore'.  Configure the '.gitignore' file
+   so that it doesn't push the '.env' file to the repository.
+
+   Add the connection string and the port variable from 'index.js' into the '.env'
+   file.  You can use 'MONGO_URI' as the variable.
+
+   Configure the 'index.js' file to use the port number from the '.env' file OR
+   have it use it from the local file if it does not find the '.env' file for some
+   reason.
+
+
+C. Create 'config/db.js' and use mongoose and dotenv to write an async function that
+   will connect to the MongoDB database.  Use a try/catch to do so.  Within the catch,
+   ensure that the process exits gracefully after an error.
+
+
+D. Import the function that connects to MongoDB into the 'index.js' file, and use it
+   to connect to the database.
+
+   If the database connects and verifies connection just like in Anki, then you've
+   completed this challenge
+
+
+Solution: https://www.youtube.com/watch?v=TFGEq5OZgaA (11:07)
