@@ -1,0 +1,38 @@
+4.  CREATE USERS
+
+
+NOTE: YOUR '/backend/.env' FILE WILL BE NEEDED!!!
+
+
+We are going to create users by way of a signup route.
+
+
+A. Go into '/controllers/user-controller.js' and create a route that will create/sign up
+   users.  This async function will be called 'signup'.
+
+   For this you will have to get information from the frontend.  You will be looking to
+   get what is in the schema you created in the last lesson: name, email, and password.
+   How do you get all of these?
+
+   Use a variable called 'existingUser' to find a user by email. 
+
+   If a user already exists, return code 400 stating 'User already exists! Login instead'
+   If a user doesn't exist, create the user
+
+
+B. Create another try/catch and save the user to the database.  Now, import this function
+   into '/routes/user-routes.js' and implement the appropriate request.
+
+   NOTE: IF YOU TRY TO CREATE A USER NOW, IT WILL ERROR OUT BECAUSE IT DOESN'T KNOW WHAT
+         TYPE OF DATA IS COMING IN...WHICH IS 'JSON'.
+
+   Go to 'index.js' and fix this.
+
+   You should now have succesfully added a user.  Check MongoDB and make sure the user
+   that you created is there.  If there is a user, you have successfully completed this
+   challenge.
+
+   
+   
+
+Solution: https://www.youtube.com/watch?v=TFGEq5OZgaA (28:00)
