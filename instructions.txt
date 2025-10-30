@@ -28,7 +28,7 @@ B. Create another try/catch and save the user to the database.  Now, import this
 
    Go to 'index.js' and fix this.
 
-   You should now have succesfully added a user.  Check MongoDB and make sure the user
+   You should now be able to successfully add users.  Check MongoDB and make sure the user
    that you created is there.  If there is a user, you have successfully completed this
    challenge.
 
