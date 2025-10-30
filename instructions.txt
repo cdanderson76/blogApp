@@ -36,10 +36,12 @@ C. Import this function into '/routes/user-routes.js'.  You will use the 'get' m
    '/api/user' by importing the router from '/routes/user-routes.js', and using
    it within the middleware within this file.
 
-   Test the route in Postman. You'll have to add user(s) to test.
+   Test the route in Postman. 
 
-   If you test, and Postman successfully retrieves the users you created, then you've
-   completed the challenge.
+   If you test, and Postman renders what you see in Anki, then you've completed the 
+   challenge.
+
+   NOTE:  YOU DON'T HAVE ANY USERS AT THE MOMENT, SO IT SHOULD RETURN AN EMPTY ARRAY
    
    
 
