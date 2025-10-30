@@ -1,0 +1,49 @@
+3.  USER MODEL
+
+
+NOTE: YOUR '/backend/.env' FILE WILL BE NEEDED!!!
+
+
+For this challenge, we have to define a schema to create users, and to retrieve the users
+from the database.
+
+
+A. Create 'backend/model/User.js' and start creating the user schema.  Use the following 
+   to build it:
+
+   name (required)
+   email (required/unique)
+   password (required/mininum length needs to be 6 characters)
+   ensure that user creation will include a timestamp
+
+   Export the model.
+
+
+B. Create 'backend/routes/user-routes.js' and initialize express routing. Export it as well 
+   Create 'backend/controllers/user-controller.js'
+
+   In 'backend/controllers/user-controller.js' create a function called 'getAllUsers'.
+   You will use the 'User' model in order to create a route within '/routes/user-routes'.
+
+   If there are no users, return code 404 with 'No users found'
+   If there are users, return code 200 with the users.
+
+
+C. Import this function into '/routes/user-routes.js'.  You will use the 'get' method,
+   along with the basic home route symbol.
+
+   Turn the route within 'index.js' to a home route by changing its endpoint to
+   '/api/user' by importing the router from '/routes/user-routes.js', and using
+   it within the middleware within this file.
+
+   Test the route in Postman. 
+
+   If you test, and Postman renders what you see in Anki, then you've completed the 
+   challenge.
+
+   NOTE:  YOU DON'T HAVE ANY USERS AT THE MOMENT, SO IT SHOULD RETURN AN EMPTY ARRAY
+   
+   
+
+
+Solution: https://www.youtube.com/watch?v=TFGEq5OZgaA (18:04)
