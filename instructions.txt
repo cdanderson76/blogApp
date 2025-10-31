@@ -1,4 +1,4 @@
-5.  HASH PASSWORDS
+5.  HASH PASSWORDS & LOGIN ROUTE
 
 
 NOTE: YOUR '/backend/.env' FILE WILL BE NEEDED!!!
@@ -8,14 +8,50 @@ Passwords are being stored in plain sight within MongoDB.  We need to hash these
 security reasons!
 
 
-A. 
+A. Install 'bcrypt' and import it into 'user-controller.js'.  When the new user is
+   created, have the password hashed.
 
+   Now go into MongoDB and create a user.  Check and make sure that the password is
+   now coded in a string in which hides the password.  Delete any other users, that
+   don't have their passwords hashed.
+
+   Passwords of newly created users should have an unknown coded string just as you see
+   in Anki.
    
-   
+
+
+B. Create a login route within 'user-routes.js' (What method will we use?). We will use
+   the URL '/login' for this route.
+
+   Go to 'user-controller.js' and create the function for this login route.
+
+   Write code similar to what you see in the 'signup' route, as you will be checking for
+   an existing user (you can even copy the specific code if you want).
+
+   If we don't find an 'existingUser', return status 404 with a message stating 'Couldn't
+   find user with this email'.
+
+
+
+C. If all is well, create a variable called 'isPasswordCorrect', and have bcrypt compare
+   the current password with the existing password of the user.
+
+   If 'isPasswordCorrect' is false, return error code 400 with a message stating that
+   the password is incorrect.  
+
+   If 'isPasswordCorrect' IS correct, return status 200 stating that the login was
+   successful.
+
+   Import the 'login' route into 'user-routes.js'.  Test this route in Postman.
+
+   NOTE: LOOK AT THE USER IN POSTMAN (HOPEFULLY YOU CAN REMEMBER THE PASSWORDS BECAUSE
+         THEY ARE NOW HASHED).  CREATE A NEW USER IF YOU HAVE TO.
+
+   If you use the correct email and password, you should see a similar success message
+   just as you do in Anki.  Edit the email and password to ensure you get the expecting
+   errors as well.  If everything checks out, you've completed the challenge.
+
+
+
 
 Solution: https://www.youtube.com/watch?v=TFGEq5OZgaA (37:20)
-   
-   
-
-
-Solution: https://www.youtube.com/watch?v=TFGEq5OZgaA (18:04)
