@@ -1,5 +1,6 @@
 import User from "../model/User.js";
 
+//GET USERS
 export async function getAllUsers(req, res, next) {
 
   try {
